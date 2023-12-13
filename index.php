@@ -12,10 +12,11 @@
     <div class="container py-4 w-25">
         <h1 class="fw-bolder">Iscriviti alle nostre newsletter</h1>
         <form class="py-4">
-            <label for="userEmail" class="form-label">Email address:</label>
-            <input type="text" class="form-control" id="userEmail" name="userEmail">
-            <button type="submit" class="btn btn-primary my-4">Verify</button>
+            <label for="user-email" class="form-label">Indirizzo email:</label>
+            <input type="text" class="form-control" id="user-email" name="user-email" value="<?php echo $_GET['user-email'] ?>">
+            <button type="submit" class="btn btn-primary mt-4">Iscriviti</button>
         </form>
+        <?php include __DIR__ . "/functions.php"; ?>
     </div>
 </body>
 
